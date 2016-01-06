@@ -1,0 +1,19 @@
+<link rel="import" href="business-card.html">
+<dom-module id="my-card">
+  <template>
+    <business-card></business-card>
+    <business-card class="cornsilk"></business-card>
+    <style>
+      .cornsilk {
+        --custom-card-color: cornsilk;
+        --custom-text-color: black;
+      }
+    </style>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'my-card'
+    });
+  </script>
+</dom-module>

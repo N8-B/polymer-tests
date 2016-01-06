@@ -1,0 +1,20 @@
+<link rel="import" href="child-element.html">
+
+<dom-module id="parent-element">
+  <template>
+    <p>Parent</p>
+    <input type="text" value="{{parentData::input}}" />
+    <child-element data="{{parentData}}"></child-element>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+  </template>
+  <script>
+    Polymer({
+      is: 'parent-element'
+    });
+  </script>
+</dom-module>
